@@ -12,3 +12,7 @@ Favor focus over features
 Avoid administrative distraction
 Design for failure
 Keep it logically awesome
+Beautiful is better than ugly
+Explicit is better than implicit
+Simple is better than complex
+Complex is better than complicated

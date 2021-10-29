@@ -2,6 +2,18 @@ import random
 
 
 def start():
+  resp = input('Do you want to add more quotes?(y/n) ')
+  resp = resp.lower()
+
+  if resp == 'y':
+    f = open("quotes.txt", "at")
+
+    while resp == 'y':
+      quote = input('New quote? >')
+      f.write(quote+"\n")
+      resp = input('Do you want to add more quotes?(y/n) ')
+    f.close()
+
   f = open("quotes.txt")
   quotes = f.readlines()
   f.close()
