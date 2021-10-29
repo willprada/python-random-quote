@@ -13,6 +13,7 @@ def start():
       f.write(quote+"\n")
       resp = input('Do you want to add more quotes?(y/n) ')
     f.close()
+  print()
 
   f = open("quotes.txt")
   quotes = f.readlines()
@@ -20,7 +21,11 @@ def start():
 
   last = 13
   rnd = random.randint(0, last)
-  print(quotes[rnd])
+  print(quotes[rnd], end="")
+  rnd = random.randint(0, last)
+  print(quotes[rnd], end="")
+
+
 
 
 if __name__== "__main__":
